@@ -79,26 +79,20 @@
         <h2>News</h2>
       </div>
       <div class="container">
-        <dl>
-          <dt>2020.XX.XX</dt>
-          <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
-        </dl>
-        <dl>
-          <dt>2020.XX.XX</dt>
-          <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
-        </dl>
-        <dl>
-          <dt>2019.XX.XX</dt>
-          <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
-        </dl>
-        <dl>
-          <dt>2019.XX.XX</dt>
-          <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
-        </dl>
-        <dl>
-          <dt>2019.XX.XX</dt>
-          <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
-        </dl>
+        <div class="news_contents">
+          <dl>
+            <dt>2020.XX.XX</dt>
+            <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+            <dt>2020.XX.XX</dt>
+            <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+            <dt>2019.XX.XX</dt>
+            <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+            <dt>2019.XX.XX</dt>
+            <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+            <dt>2019.XX.XX</dt>
+            <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+          </dl>
+        </div>
       </div>
     </div>
   </section>
@@ -110,16 +104,23 @@
       </div>
       <div class="container">
         <form action="" method="post" name="contact-form">
-          <label for="name">NAME</label>
-          <input type="text" id="name" name="name" class="form_name" placeholder="お名前を入力してください">
+          <div class="form_name">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" placeholder="お名前を入力してください">
+          </div>
+
+          <div class="form_mail">
+            <label for="mail">E-mail</label>
+            <input type="email" id="mail" name="mail" placeholder="メールアドレスを入力してください">
+          </div>
           
-          <label for="mail">E-mail</label>
-          <input type="email" id="mail" name="mail" class="form_mail" placeholder="メールアドレスを入力してください">
-          
-          <label for="message">MESSAGE</label>
-          <textarea id="message" name="message" class="form_message" placeholder="メッセージを入力してください"></textarea>
+          <div class="form_message">
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" placeholder="メッセージを入力してください"></textarea>
+          </div>
+
         </form>
-        <a href="">送信</a>
+        <a href="" class="button_submit" id="submit">送信</a>
       </div>
     </div>
   </section>

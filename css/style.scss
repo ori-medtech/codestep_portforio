@@ -2,51 +2,56 @@ $color: #24292E;
 
 /* utility */
 
+* {
+  box-sizing: border-box;
+}
 body {
   font-size: 14.4px;
 
-  h2 {
-    font-size: 24px;
-    line-height: 1.5;
-  }
+  
+}
+h2 {
+  font-size: 24px;
+  line-height: 1.5;
+}
 
-  p {
-    line-height: calc(21 / 14.4);
-  }
+p {
+  line-height: calc(21 / 14.4);
+}
 
-  li {
-    list-style: none;
-    line-height: calc(21 / 14.4);
-  }
+li {
+  list-style: none;
+  line-height: calc(21 / 14.4);
+}
 
-  a {
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: $color;
+  &:hover {
+    opacity: .8;
+  }
+  &:visited {
     color: $color;
-    &:hover {
-      opacity: .8;
-    }
-    &:visited {
-      color: $color;
-    }
   }
 }
 
 .wrapper {
-  width: 75%;
-  max-width: 960px;
-  margin: 0 auto;
-  background: skyblue;
+width: 75%;
+max-width: 960px;
+margin: 0 auto;
+// background: skyblue;
+padding: 0 60px;
 }
 
 .container {
-  padding: 0 60px;
-  background: lime;
+  // background: lime;
 }
 
 .section-title {
   padding-top: 80px;
   padding-bottom: 65px;
   text-align: center;
+  // background-color: tomato;
 }
 
 /* header */
@@ -63,7 +68,7 @@ header {
     }
   }
 }
-
+  
 .header_contents {
   display: flex;
   justify-content: space-between;
@@ -119,3 +124,94 @@ header {
 }
 
 /* news */
+.news {
+  margin-top: 50px;
+}
+
+.news_contents {
+  dl{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #c8c8c8;
+
+    dt {
+      width: 20%;
+      padding: 15px 0 15px 13.5px;
+      border-bottom: 1px solid #c8c8c8;
+    }
+    
+    dd {
+      width: 80%;
+      padding: 15px 0;
+      border-bottom: 1px solid #c8c8c8;
+    }
+  }
+}
+
+/* contact */
+.contact {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.form_name {
+  display: flex;
+  justify-content: space-between;
+  label {
+    line-height: 43px;
+  }
+  input {
+    width :723 / 840 * 100 * 1%;
+    height: 43px;
+  }
+}
+
+.form_mail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  label {
+    line-height: 43px;
+  }
+  input {
+    width :723 / 840 * 100 * 1%;
+    height: 43px;
+  }
+}
+
+.form_message {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  label {
+    line-height: 43px;
+  }
+  textarea {
+    width :723 / 840 * 100 * 1%;
+    height: 160px;
+  }
+}
+
+.contact .button_submit {
+  display: inline-block;
+  width: 200px;
+  height: 53px;
+  line-height: 53px;
+  background-color: $color;
+  color: #fff;
+  margin-top: 30px;
+}
+
+/* footer */
+footer {
+  margin-top: 145px;
+  text-align: center;
+  background-color: $color;
+}
+
+footer p {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 10px;
+  padding: 10px 0;
+}
