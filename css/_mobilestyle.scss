@@ -1,0 +1,116 @@
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    max-width: initial;
+  }
+
+  .section-title {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  /* header */
+
+  header {
+    height: 102px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+
+    h1 {
+      line-height: 0;
+
+      img {
+        width: 143px;
+        height: 36px;
+      }
+    }
+  }
+
+  .header_contents {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav ul {
+    font-size: 12.8px;
+    gap: 20px;
+    margin-right: 0;
+  }
+
+  /* about */
+
+  .about {
+    margin-top: 10px;
+  }
+
+  /* work */
+  .work {
+    margin-top: 0;
+  }
+
+  .work_contents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* news */
+  .news {
+    margin-top: 0;
+  }
+
+  .news_contents {
+    .archive {
+      flex-direction: column;
+      dt {
+        padding: 14.5px 0 0 13.5px; 
+        line-height: calc(21 / 14.4);
+      }
+      
+      dd {
+        padding: 0 13.5px 14.5px 13.5px;
+        margin-left: 0;
+        line-height: calc(21 / 14.4);
+      }
+    }
+  }
+
+  /* contact */
+  .contact {
+    margin-top: 0;
+  }
+
+  .form_name {
+    text-align: left;
+    flex-direction: column;
+
+    input {
+      width: 100%;
+    }
+  }
+  
+  .form_mail {
+    text-align: left;
+    flex-direction: column;
+    margin-top: 10px;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .form_message {
+    text-align: left;
+    flex-direction: column;
+    margin-top: 10px;
+
+    textarea {
+      width: 100%;
+    }
+  }
+
+  /* footer */
+
+  footer {
+    margin-top: 70px;
+  }
+}

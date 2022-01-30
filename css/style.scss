@@ -45,19 +45,13 @@ a {
 width: 75%;
 max-width: 960px;
 margin: 0 auto;
-// background: skyblue;
-padding: 0 60px;
-}
-
-.container {
-  // background: lime;
+padding: 0 4%;
 }
 
 .section-title {
   padding-top: 80px;
   padding-bottom: 65px;
   text-align: center;
-  // background-color: tomato;
 }
 
 /* header */
@@ -114,7 +108,6 @@ header {
 
 .profile-text p {
   margin-top: 30px;
-  // background-color: tan;
 }
 
 /* works */
@@ -140,20 +133,15 @@ header {
 .news_contents {
   .archive{
     display: flex;
-    // flex-wrap: wrap;
-    border-top: 1px solid #c8c8c8;
+    border-top: 1px solid   #c8c8c8;
     
     dt {
-      // width: 20%;
       padding: 17.75px 0 17.75px 13.5px;
-      // border-bottom: 1px solid #c8c8c8;
     }
     
     dd {
-      // width: 80%;
       padding: 17.75px 0;
       margin-left: 84px;
-      // border-bottom: 1px solid #c8c8c8;
     }
     
     &:last-child {
@@ -204,7 +192,7 @@ header {
     align-items: flex-start;
   }
   textarea {
-    width : calc(723 / 840 * 100 * 1%);
+    width : calc(723 / 840  * 100 * 1%);
     height: 160px;
   }
 }
@@ -232,3 +220,5 @@ footer p {
   font-size: 10px;
   padding: 10px 0;
 }
+
+@import "_mobilestyle.scss";
