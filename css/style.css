@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* utility */
 * {
   box-sizing: border-box;
@@ -5,11 +6,17 @@
 
 body {
   font-size: 14.4px;
+  font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
 }
 
 h2 {
   font-size: 24px;
   line-height: 1.5;
+}
+
+h3 {
+  font-size: 14.4;
+  font-weight: normal;
 }
 
 p {
@@ -85,10 +92,12 @@ header h1 img {
 
 /* about */
 .address {
-  margin-top: 30px;
+  margin-top: 37px;
+  line-height: 1.5;
+  font-size: 14.4;
 }
 
-.profile-text {
+.profile-text p {
   margin-top: 30px;
 }
 
@@ -111,19 +120,18 @@ header h1 img {
   margin-top: 50px;
 }
 
-.news_contents dl {
+.news_contents .archive {
   display: flex;
-  flex-wrap: wrap;
   border-top: 1px solid #c8c8c8;
 }
-.news_contents dl dt {
-  width: 20%;
-  padding: 15px 0 15px 13.5px;
-  border-bottom: 1px solid #c8c8c8;
+.news_contents .archive dt {
+  padding: 17.75px 0 17.75px 13.5px;
 }
-.news_contents dl dd {
-  width: 80%;
-  padding: 15px 0;
+.news_contents .archive dd {
+  padding: 17.75px 0;
+  margin-left: 84px;
+}
+.news_contents .archive:last-child {
   border-bottom: 1px solid #c8c8c8;
 }
 
@@ -138,7 +146,8 @@ header h1 img {
   justify-content: space-between;
 }
 .form_name label {
-  line-height: 43px;
+  line-height: 1.4583333333;
+  align-items: flex-start;
 }
 .form_name input {
   width: 86.0714285714%;
@@ -151,7 +160,8 @@ header h1 img {
   margin-top: 10px;
 }
 .form_mail label {
-  line-height: 43px;
+  line-height: 1.4583333333;
+  align-items: flex-start;
 }
 .form_mail input {
   width: 86.0714285714%;
@@ -164,7 +174,8 @@ header h1 img {
   margin-top: 10px;
 }
 .form_message label {
-  line-height: 43px;
+  line-height: 1.4583333333;
+  align-items: flex-start;
 }
 .form_message textarea {
   width: 86.0714285714%;
@@ -183,7 +194,7 @@ header h1 img {
 
 /* footer */
 footer {
-  margin-top: 145px;
+  margin-top: 130px;
   text-align: center;
   background-color: #24292E;
 }

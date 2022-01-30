@@ -7,12 +7,18 @@ $color: #24292E;
 }
 body {
   font-size: 14.4px;
+  font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
 
   
 }
 h2 {
   font-size: 24px;
   line-height: 1.5;
+}
+
+h3 {
+  font-size: 14.4;
+  font-weight: normal;
 }
 
 p {
@@ -68,9 +74,9 @@ header {
     }
   }
 }
-  
+
 .header_contents {
-  display: flex;
+  display: flex;  
   justify-content: space-between;
   align-items: center;
 }
@@ -101,11 +107,14 @@ header {
 /* about */
 
 .address {
-  margin-top: 30px;
+  margin-top: 37px;
+  line-height: 1.5;
+  font-size: 14.4;
 }
 
-.profile-text {
+.profile-text p {
   margin-top: 30px;
+  // background-color: tan;
 }
 
 /* works */
@@ -129,20 +138,25 @@ header {
 }
 
 .news_contents {
-  dl{
+  .archive{
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     border-top: 1px solid #c8c8c8;
-
+    
     dt {
-      width: 20%;
-      padding: 15px 0 15px 13.5px;
-      border-bottom: 1px solid #c8c8c8;
+      // width: 20%;
+      padding: 17.75px 0 17.75px 13.5px;
+      // border-bottom: 1px solid #c8c8c8;
     }
     
     dd {
-      width: 80%;
-      padding: 15px 0;
+      // width: 80%;
+      padding: 17.75px 0;
+      margin-left: 84px;
+      // border-bottom: 1px solid #c8c8c8;
+    }
+    
+    &:last-child {
       border-bottom: 1px solid #c8c8c8;
     }
   }
@@ -158,10 +172,11 @@ header {
   display: flex;
   justify-content: space-between;
   label {
-    line-height: 43px;
+    line-height: calc(21 / 14.4);
+    align-items: flex-start;
   }
   input {
-    width :723 / 840 * 100 * 1%;
+    width :calc(723 / 840 * 100 * 1%);
     height: 43px;
   }
 }
@@ -171,10 +186,11 @@ header {
   justify-content: space-between;
   margin-top: 10px;
   label {
-    line-height: 43px;
+    line-height: calc(21 / 14.4);
+    align-items: flex-start;
   }
   input {
-    width :723 / 840 * 100 * 1%;
+    width :calc(723 / 840 * 100 * 1%);
     height: 43px;
   }
 }
@@ -184,10 +200,11 @@ header {
   justify-content: space-between;
   margin-top: 10px;
   label {
-    line-height: 43px;
+    line-height: calc(21 / 14.4);
+    align-items: flex-start;
   }
   textarea {
-    width :723 / 840 * 100 * 1%;
+    width : calc(723 / 840 * 100 * 1%);
     height: 160px;
   }
 }
@@ -204,7 +221,7 @@ header {
 
 /* footer */
 footer {
-  margin-top: 145px;
+  margin-top: 130px;
   text-align: center;
   background-color: $color;
 }
